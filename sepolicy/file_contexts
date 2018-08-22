@@ -73,3 +73,8 @@
 
 # vendor
 /vendor/bin/tftp_server         u:object_r:rfs_access_exec:s0
+
+# perfd
+/vendor/bin/perfd                                             u:object_r:perfd_exec:s0
+/dev/socket/perfd                                             u:object_r:perfd_socket:s0
+/vendor/bin/hw/android\.hardware\.power@1\.1-service.mata     u:object_r:hal_power_default_exec:s0
