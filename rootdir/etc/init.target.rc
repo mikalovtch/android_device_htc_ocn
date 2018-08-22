@@ -495,6 +495,10 @@ on property:sys.boot_completed=1
     # Is IOP even still a thing?
     start iop
 
+# qcom-power triggers this property
+on property:sys.post_boot.parsed=1
+    start perfd
+
 on property:sys.srgb=1
    write /sys/devices/virtual/graphics/fb0/srgb 1
 
